@@ -1,11 +1,13 @@
 ﻿using AspNetMVC_API.Models.ViewModels;
 using AspNetMVC_API_BLL.Repository;
+using AspNetMVC_API_Entity.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
+
 
 namespace AspNetMVC_API.Controllers
 {
@@ -18,17 +20,17 @@ namespace AspNetMVC_API.Controllers
         {
             try
             {
-                var list = myStudentRepo.GetAll().Select(x=> new 
-                { 
+                var list = myStudentRepo.GetAll().Select(x => new
+                {
                     x.Id,
                     x.Name,
                     x.Surname,
                     x.RegisterDate
                 }
                 ).ToList();
-                if (list!=null)
+                if (list != null)
                 {
-                    if (list.Count==0)
+                    if (list.Count == 0)
                     {
                         return new ResponseData()
                         {
@@ -61,7 +63,7 @@ namespace AspNetMVC_API.Controllers
                     Success = false,
                     Message = ex.Message
                 };
-                
+
             }
         }
 
@@ -90,7 +92,7 @@ namespace AspNetMVC_API.Controllers
                         }
                     };
                 }
-                
+
                 else
                 {
                     return new ResponseData()
@@ -112,5 +114,47 @@ namespace AspNetMVC_API.Controllers
             }
         }
 
+        [System.Web.Http.HttpPost]
+        public ResponseData Insert([FromBody]StudentViewModel model)
+        {
+            try
+            {
+                if (model == null)
+                {
+                    return new ResponseData()
+                    {
+                        Success = false,
+                        Message = "Ekleme işlemi için verilerinizi doğru şekilde göndermeniz gerekir!"
+                    };
+                }
+                Student newStudent = new Student()
+                {
+                    Name = model.name,
+                    Surname = model.surname,
+                    RegisterDate = model.registerdate
+                };
+                if (myStudentRepo.Insert(newStudent) > 0)
+                {
+                    return new ResponseData()
+                    {
+                        Success = true,
+                        Message = $"Yeni öğrenci eklendi, Id={newStudent.Id}"
+                    };
+                }
+                else
+                {
+                    throw new Exception("Öğrenci ekleme işlemi başarısız");
+                }
+            }
+            catch (Exception ex)
+            {
+                return new ResponseData()
+                {
+                    Success = false,
+                    Message = ex.Message
+                };
+
+            }
+        }
     }
 }
