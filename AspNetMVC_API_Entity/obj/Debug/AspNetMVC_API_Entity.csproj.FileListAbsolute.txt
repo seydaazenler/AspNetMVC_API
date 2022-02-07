@@ -1,0 +1,12 @@
+C:\Users\103SABAH_ŞEYDA\source\repos\AspNetMVC_API\AspNetMVC_API_Entity\bin\Debug\AspNetMVC_API_Entity.dll.config
+C:\Users\103SABAH_ŞEYDA\source\repos\AspNetMVC_API\AspNetMVC_API_Entity\bin\Debug\AspNetMVC_API_Entity.dll
+C:\Users\103SABAH_ŞEYDA\source\repos\AspNetMVC_API\AspNetMVC_API_Entity\bin\Debug\AspNetMVC_API_Entity.pdb
+C:\Users\103SABAH_ŞEYDA\source\repos\AspNetMVC_API\AspNetMVC_API_Entity\bin\Debug\EntityFramework.dll
+C:\Users\103SABAH_ŞEYDA\source\repos\AspNetMVC_API\AspNetMVC_API_Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\103SABAH_ŞEYDA\source\repos\AspNetMVC_API\AspNetMVC_API_Entity\bin\Debug\EntityFramework.xml
+C:\Users\103SABAH_ŞEYDA\source\repos\AspNetMVC_API\AspNetMVC_API_Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\103SABAH_ŞEYDA\source\repos\AspNetMVC_API\AspNetMVC_API_Entity\obj\Debug\AspNetMVC_API_Entity.csproj.AssemblyReference.cache
+C:\Users\103SABAH_ŞEYDA\source\repos\AspNetMVC_API\AspNetMVC_API_Entity\obj\Debug\AspNetMVC_API_Entity.csproj.CoreCompileInputs.cache
+C:\Users\103SABAH_ŞEYDA\source\repos\AspNetMVC_API\AspNetMVC_API_Entity\obj\Debug\AspNetMVC_API_Entity.csproj.CopyComplete
+C:\Users\103SABAH_ŞEYDA\source\repos\AspNetMVC_API\AspNetMVC_API_Entity\obj\Debug\AspNetMVC_API_Entity.dll
+C:\Users\103SABAH_ŞEYDA\source\repos\AspNetMVC_API\AspNetMVC_API_Entity\obj\Debug\AspNetMVC_API_Entity.pdb
